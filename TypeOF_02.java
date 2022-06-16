@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TypeOF_02 {
@@ -26,6 +27,10 @@ public class TypeOF_02 {
             } else if (in.hasNextShort()) {
                 result = "Short";
             }
+
+            Object obj = null;
+            obj = new ArrayList<>();
+            System.out.println(obj.getClass());
 
             System.out.println("Type: " + result);
         } catch (Exception e) {
